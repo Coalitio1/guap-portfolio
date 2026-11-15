@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Андрей Нехорошев - портфолио</title>
+    <meta name="description" content="Учебные проекты по программной инженерии: Python, SQL Server и Unity.">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="site.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="shell bar"><a class="brand" href="#home" aria-label="На главную">АН<span>.</span></a>
+            <nav aria-label="Разделы сайта"><a href="#home">Главная</a><a href="#about">Обо мне</a><a
+                    href="#work">Проекты</a><a href="#contact">Контакты</a></nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero shell" id="home">
+            <div>
+                <p class="tag">ПРОГРАММНАЯ ИНЖЕНЕРИЯ</p>
+                <h1>Андрей<br>Нехорошев<span>.</span></h1>
+                <p class="lead">Разрабатываю приложения, проектирую базы данных и собираю игровые прототипы.</p><a
+                    class="button" href="#work">Смотреть проекты <span aria-hidden="true">↘</span></a>
+            </div>
+            <div class="hero-art">
+                <img src="ya.jpg" width="996" height="1128" alt="я">
+            </div>
+            </div>
+            <!-- <span>Python / SQL / Unity</span> -->
+        </section>
+        <section class="about" id="about">
+            <div class="shell about-grid">
+                <h2>Обо мне</h2>
+                <div>
+                    <p>Учусь в ГУАП на направлении «Программная инженерия». В учебных проектах мне нравится брать задачу
+                        целиком: определить, какие данные нужны, придумать структуру хранения, написать логику и
+                        проверить результат через интерфейс.</p>
+                    <p>В приложении учёта моточасов я работал с накопительными показаниями и расчётом по двум сменам. В
+                        Unity мне было интересно настроить прыжок и генерацию дистанции так, чтобы игрок мог сразу
+                        начать новый забег после ошибки. В проектах с базами данных люблю проверять расчёты на граничных
+                        случаях.</p>
+                </div>
+            </div>
+        </section>
+        <section class="shell works" id="work">
+            <h2>Проекты</h2>
+            <div class="gallery">
+                <figure><img src="moto.png" width="600" height="370"
+                        alt="Схема графика накопительных показаний оборудования">
+                    <figcaption><small>PYTHON - PYQT6 - SQL SERVER</small>
+                        <h3>Учёт моточасов</h3>
+                        <p>Настольное приложение с отчётами по сменам и выгрузкой данных по механизмам.</p>
+                    </figcaption>
+                </figure>
+                <figure><img src="runner.svg" width="600" height="370"
+                        alt="Схема платформ и препятствий двухмерного раннера">
+                    <figcaption><small>UNITY · C#</small>
+                        <h3>Двухмерный раннер</h3>
+                        <p>Автоматический бег, прыжки, генерация платформ и моментальный перезапуск.</p>
+                    </figcaption>
+                </figure>
+                <figure><img src="database.svg" width="600" height="370"
+                        alt="Схема связей получателя, назначения и выплаты">
+                    <figcaption><small>SQL SERVER · МОДЕЛИРОВАНИЕ ДАННЫХ</small>
+                        <h3>Учёт социальных выплат</h3>
+                        <p>Проект базы данных для хранения сведений о получателях и назначенных выплатах.</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <div class="shell contact-grid">
+                <div>
+                    <h2>Контакты</h2>
+                    <p>Написать о проекте или задать вопрос.</p><a>portfolio@gmail.com</a><br><a>+7 960 928-86-79</a>
+                </div>
+                <form><label>Имя<input name="name" autocomplete="name" required
+                            maxlength="100"></label><label>Email<input name="email" type="email" autocomplete="email"
+                            required maxlength="254"></label><label>Сообщение<textarea name="message" required
+                            maxlength="2000" rows="4"></textarea></label><button class="button"
+                        type="submit">Проверить</button>
+                    <p id="form-state" role="status" hidden></p>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="shell bar"><span>2026 Андрей Нехорошев</span>
+            <div class="social"><a href="https://vk.com/guap_ru" aria-label="ГУАП во ВКонтакте"><span
+                        class="social-icon" aria-hidden="true">VK</span> ВКонтакте</a><a href="https://t.me/new_guap"
+                    aria-label="ГУАП в Telegram"><svg class="social-icon" width="20" height="20" viewBox="0 0 24 24"
+                        aria-hidden="true">
+                        <path fill="currentColor" d="M3 11 21 4l-4 16-5-4-3 3 1-6 8-6-10 6z" />
+                    </svg> Telegram</a></div>
+        </div>
+    </footer>
+</body>
+
+</html>
